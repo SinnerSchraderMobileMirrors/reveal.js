@@ -1,0 +1,49 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@font-face{
+    font-family:"DINNextW01-CondensedMed";
+    src:    url("../../lib/font/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot");
+    src:    url("../../lib/font/0b46a18d-fb34-4ef7-b5da-5902c510577a.eot?iefix") format("embedded-opentype"),
+            url("../../lib/font/2613a064-2962-44af-ae6f-3640e06e8dc4.woff") format("woff"),
+            url("../../lib/font/2889b152-497e-4ea3-a90d-02854d136a8d.ttf") format("truetype"),
+            url("../../lib/font/4f311da1-9ec6-4379-9621-b45be0e23abd.svg#4f311da1-9ec6-4379-9621-b45be0e23abd") format("svg");
+}
+// S2M colors
+$white: #FFF;
+$yellow: rgba(255,197, 51,1);
+$dark_grey_1: rgba(24,23,22,1);
+$dark_grey_2: rgba(54,53,52, 1);
+$light_grey: rgba(166,166,166,1);
+
+// Override theme settings (see ../template/settings.scss)
+
+// Primary/body text
+$mainFont: 'DINNextW01-CondensedMed';
+$mainFontSize: 45px;
+$mainColor: $white;
+
+// Headings
+$headingFont: 'DINNextW01-CondensedMed';
+$headingColor: $yellow;
+$headingLineHeight: 1.0em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: uppercase;
+$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$heading1TextShadow: $headingTextShadow;
+
+
+$backgroundColor: $dark_grey_1;
+$linkColor: $yellow;
+$linkColorHover: $light_grey;
+$selectionColor: $white;
+$selectionBackgroundColor: $yellow;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
